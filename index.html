@@ -23,29 +23,36 @@
     /> -->
   </head>
   <body>
+
+    <div class="container-fluid  fixed-top">
+      <div class="row">
+          <div class="col-lg-5 mx-auto">
+              <div id="fixed-header" class="d-none d-flex justify-content-between align-items-center py-2 mt-3" style="background-color: #fff;opacity: 0.8;border-radius: 30px;">
+              <img style="border-radius: 50%" src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=800/https://cdn-b.heylink.me/media/users/avatars/100489a0dfe442909fe0fceb238bba8f.jpg" width="50px" height="50px" class="ms-1" alt=""/>
+              <a href=""><i class="fa-solid fa-share-nodes me-3" style="font-size: 30px"></i></a>
+            </div>
+          </div>
+      
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div class="row">
+
         <div class="col-lg-5 mx-auto">
+
           <div class="d-flex justify-content-center mt-5">
-            <img
-              style="border-radius: 50%"
-              src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=800/https://cdn-b.heylink.me/media/users/avatars/100489a0dfe442909fe0fceb238bba8f.jpg"
-              width="100px"
-              height="100px"
-              alt=""
-            />
-            <a href=""
-              ><i
-                class="fa-solid fa-share-nodes text-white"
-                style="font-size: 25px"
-              ></i
-            ></a>
+            <img style="border-radius: 50%" src="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=800/https://cdn-b.heylink.me/media/users/avatars/100489a0dfe442909fe0fceb238bba8f.jpg" width="100px" height="100px" alt=""/>
+            <a href=""><i class="fa-solid fa-share-nodes text-white" style="font-size: 25px"></i></a>
           </div>
           <p class="text-white text-center" style="font-size: 20px">
             ၂၀၂၀ ကတည်းက နာမည်ပျက်မရှိရပ်တည်လာတဲ့ အလျော်/အစားမှန်ကန်
             ဂိမ်းဆိုဒ်ကြီး Queen Bee SKM မှကြိုဆိုပါတယ်ရှင့်😘
           </p>
-          <div class="accordion" id="accordionExample">
+
+          
+
+          <div class="accordion mt-3" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
@@ -299,5 +306,23 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+          $(window).scroll(function(){
+		var getscrolltt = $(this).scrollTop();
+		// console.log(getscrolltt);
+
+    if(getscrolltt >= 195){
+			$('#fixed-header').addClass('fixed-header');
+      $('#fixed-header').removeClass('d-none');
+		}else{
+      $('#fixed-header').addClass('d-none');
+			$('#fixed-header').removeClass('fixed-header');
+		}
+  });
+    </script>
+
   </body>
 </html>

@@ -9,6 +9,11 @@ body {
   font-size: 20px;
 }
 
+.fixed-header{
+ display: block;
+  z-index: 100;
+}
+
 .accordion a {
   text-decoration: none;
   color: white;
