@@ -84,4 +84,6 @@ body {
 }
 
 
-
+.hover-tag:hover{
+  background-color: rgba(123, 180, 255, 0.1);
+}
