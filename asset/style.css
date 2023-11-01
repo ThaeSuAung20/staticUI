@@ -91,6 +91,11 @@ body {
   }
 }
 
+.hover-tag:hover{
+  background-color: rgba(123, 180, 255, 0.1);
+
+}
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
